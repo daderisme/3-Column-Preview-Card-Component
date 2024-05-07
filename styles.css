@@ -1,0 +1,122 @@
+:root {
+    --main-orange: hsl(31, 77%, 52%);
+    --main-cyan: hsl(184, 100%, 22%);
+    --second-cyan: hsl(179, 100%, 13%);
+    --paragraph-grey: hsla(0, 0%, 100%, 0.75);
+    --btns-grey: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 5rem 2.5rem;
+}
+
+.descriptive-card {
+    padding: 2.5rem;
+}
+
+.descriptive-card h1 {
+    color: var(--btns-grey);
+    font-family: "big shoulders display", sans-serif;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: -20px;
+}
+
+.descriptive-card p {
+    font-family: "figtree", sans-serif;
+    color: var(--paragraph-grey);
+    line-height: 1.5rem;
+    font-size: 14px;
+    width: 73%;
+}
+
+.learn-more-btn {
+    width: 110px;
+    height: 35px;
+    border-radius: 25px;
+    margin: 20px 0;
+    background-color: var(--btns-grey);
+    cursor: pointer;
+    font-family: "figtree", sans-serif;
+    transition: all .1s ease-in;
+}
+
+.learn-more-btn:hover {
+    background: none;
+    color: #fff !important;
+}
+
+
+#sedans {
+    background-color: var(--main-orange);
+    border-radius: 8px 8px 0px 0px
+}
+
+#suvs {
+    background-color: var(--main-cyan);
+}
+
+#luxury {
+    background-color: var(--second-cyan);
+    border-radius: 0px 0px 8px 8px;
+}
+
+#btn-orange {
+    color: var(--main-orange);
+}
+
+#btn-cyan {
+    color: var(--main-cyan);
+}
+
+#btn-darkcyan {
+    color: var(--second-cyan);
+}
+
+@media screen and (min-width: 916px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10rem auto;
+        width: 80%;
+    }
+
+    .descriptive-card p {
+        font-size: 1rem;
+        padding: 3rem 0;
+        width: 70%;
+        margin-top: -30px;
+    }
+
+    .descriptive-card h1 {
+        padding: 20px;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-left: -20px;
+        
+    }
+
+    .learn-more-btn {
+        width: 146px;
+        height: 42px;
+        margin-top: 5rem;
+    }
+
+    #sedans {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    #luxury {
+        border-radius: 0px 8px 8px 0px;
+    }
+    
+
+}
